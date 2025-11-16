@@ -62,28 +62,8 @@ class ModelTrainer:
         except Exception as e:
             raise DementiaException(e,sys)
         
-    def track_mlflow(self,best_model,classificationmetric: ClassificationMetricArtifact):
-        mlflow.set_registry_uri("https://dagshub.com/sliitguy/SecurityNetwork.mlflow")
-        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
-        with mlflow.start_run():
-            f1_score=classificationmetric.f1_score
-            precision_score=classificationmetric.precision_score
-            recall_score=classificationmetric.recall_score
-            pr_auc_score=classificationmetric.pr_auc_score
-            roc_auc_score=classificationmetric.roc_auc_score # Added ROC AUC
-            
-            mlflow.log_metric("f1_score",f1_score)
-            mlflow.log_metric("precision",precision_score)
-            mlflow.log_metric("recall_score",recall_score)
-            mlflow.log_metric("pr_auc_score",pr_auc_score)
-            mlflow.log_metric("roc_auc_score", roc_auc_score) # Added ROC AUC
-            
-            mlflow.sklearn.log_model(best_model,"model")
-            # Model registry does not work with file store
-           
-         
-
-
+    ## <-- REMOVED: The 'track_mlflow' method was here.
+    # It is now integrated into 'train_model'.
         
     def train_model(self,X_train,y_train,x_test,y_test):
         # Models and params are unchanged from your file
@@ -177,8 +157,7 @@ class ModelTrainer:
             roc_auc_score=train_roc_auc
         )
         
-        ## Track the experiments with mlflow
-        self.track_mlflow(best_model,classification_train_metric)
+        ## <-- REMOVED: self.track_mlflow(best_model,classification_train_metric)
 
         # 3. Calculate Test Metrics using threshold and probabilities
         logging.info("Evaluating model on test set with optimal threshold...")
@@ -199,10 +178,40 @@ class ModelTrainer:
             roc_auc_score=test_roc_auc
         )
 
-        ## Track the experiments with mlflow
-        self.track_mlflow(best_model, classification_test_metric)
+        ## <-- REMOVED: self.track_mlflow(best_model, classification_test_metric)
 
         # --- **END: NEW LOGIC** ---
+
+        ## --- **START: NEW MLFLOW TRACKING BLOCK** ---
+        mlflow.set_registry_uri("https://dagshub.com/sliitguy/SecurityNetwork.mlflow")
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+
+        logging.info("Starting MLflow run...")
+        with mlflow.start_run():
+            # Log parameters
+            mlflow.log_param("best_model_name", best_model_name)
+            mlflow.log_param("optimal_f1_threshold", f"{best_threshold:.4f}")
+            
+            # Log Train Metrics
+            mlflow.log_metric("train_f1_score", classification_train_metric.f1_score)
+            mlflow.log_metric("train_precision", classification_train_metric.precision_score)
+            mlflow.log_metric("train_recall", classification_train_metric.recall_score)
+            mlflow.log_metric("train_pr_auc", classification_train_metric.pr_auc_score)
+            mlflow.log_metric("train_roc_auc", classification_train_metric.roc_auc_score)
+            
+            # Log Test Metrics
+            mlflow.log_metric("test_f1_score", classification_test_metric.f1_score)
+            mlflow.log_metric("test_precision", classification_test_metric.precision_score)
+            mlflow.log_metric("test_recall", classification_test_metric.recall_score)
+            mlflow.log_metric("test_pr_auc", classification_test_metric.pr_auc_score)
+            mlflow.log_metric("test_roc_auc", classification_test_metric.roc_auc_score)
+            
+            # Log Model
+            mlflow.sklearn.log_model(best_model, "model")
+        
+        logging.info("MLflow run completed.")
+        ## --- **END: NEW MLFLOW TRACKING BLOCK** ---
+
 
         preprocessor = load_object(file_path=self.data_transformation_artifact.transformed_object_file_path)
             
