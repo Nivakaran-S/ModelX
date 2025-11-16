@@ -60,8 +60,8 @@ class DataTransformation:
         
         # 2. Object type columns from schema
         object_cols_to_drop = [
-            col['name'] for col in self._schema_config['columns']
-            if col['type'] == 'object'
+            list(col_dict.keys())[0] for col_dict in self._schema_config['columns']
+            if list(col_dict.values())[0] == 'object'
         ]
         
         # 3. Drug columns from schema
