@@ -5,12 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "catboost>=1.2.8",
     "certifi>=2025.11.12",
     "dagshub>=0.6.3",
     "fastapi>=0.121.2",
     "flask>=3.1.2",
     "geopy>=2.4.1",
     "ipykernel>=7.1.0",
+    "lightgbm>=4.6.0",
     "mlflow>=3.6.0",
     "numpy>=2.3.4",
     "openpyxl>=3.1.5",

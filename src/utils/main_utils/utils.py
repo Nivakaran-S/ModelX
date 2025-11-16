@@ -6,7 +6,8 @@ import numpy as np
 #import dill
 import pickle
 
-from sklearn.metrics import r2_score
+# Import roc_auc_score for classification
+from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import GridSearchCV
 
 def read_yaml_file(file_path: str) -> dict:
@@ -83,21 +84,20 @@ def evaluate_models(X_train, y_train,X_test,y_test,models,param):
             model = list(models.values())[i]
             para=param[list(models.keys())[i]]
 
-            gs = GridSearchCV(model,para,cv=3)
+            # **MODIFIED**: Added scoring='roc_auc'
+            gs = GridSearchCV(model,para,cv=3, scoring='roc_auc')
             gs.fit(X_train,y_train)
 
             model.set_params(**gs.best_params_)
             model.fit(X_train,y_train)
 
-            #model.fit(X_train, y_train)  # Train model
+            # **MODIFIED**: Predict probabilities for AUC
+            y_train_proba = model.predict_proba(X_train)[:,1]
+            y_test_proba = model.predict_proba(X_test)[:,1]
 
-            y_train_pred = model.predict(X_train)
-
-            y_test_pred = model.predict(X_test)
-
-            train_model_score = r2_score(y_train, y_train_pred)
-
-            test_model_score = r2_score(y_test, y_test_pred)
+            # **MODIFIED**: Changed r2_score to roc_auc_score
+            train_model_score = roc_auc_score(y_train, y_train_proba)
+            test_model_score = roc_auc_score(y_test, y_test_proba)
 
             report[list(models.keys())[i]] = test_model_score
 

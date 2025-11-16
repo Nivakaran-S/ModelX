@@ -6,7 +6,7 @@ import sys
 from src.exception.exception import DementiaException
 from src.logging.logger import logging
 
-class NetworkModel:
+class DementiaModel:
     def __init__(self,preprocessor,model):
         try:
             self.preprocessor = preprocessor

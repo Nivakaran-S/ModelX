@@ -19,5 +19,6 @@ scipy
 openpyxl
 ipykernel
 seaborn
-
+lightgbm
+catboost
 #-e .
