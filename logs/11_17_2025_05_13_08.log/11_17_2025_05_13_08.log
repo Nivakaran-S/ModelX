@@ -1,0 +1,20 @@
+[ 2025-11-17 05:13:24,180 ] 17 root - INFO - Initiate the data ingestion
+[ 2025-11-17 05:26:58,436 ] 64 root - INFO - Performed train test split on the dataframe
+[ 2025-11-17 05:26:58,437 ] 69 root - INFO - Exporting train and test file path
+[ 2025-11-17 05:26:58,705 ] 79 root - INFO - Exported train and test file path
+[ 2025-11-17 05:26:58,711 ] 19 root - INFO - Data Initiation Completed
+[ 2025-11-17 05:26:58,813 ] 24 root - INFO - Initiate the data Validation
+[ 2025-11-17 05:26:59,015 ] 33 root - INFO - Required number of columns:228
+[ 2025-11-17 05:26:59,015 ] 34 root - INFO - Data frame has columns:228
+[ 2025-11-17 05:26:59,017 ] 33 root - INFO - Required number of columns:228
+[ 2025-11-17 05:26:59,017 ] 34 root - INFO - Data frame has columns:228
+[ 2025-11-17 05:26:59,775 ] 26 root - INFO - data Validation Completed
+[ 2025-11-17 05:26:59,776 ] 31 root - INFO - data Transformation started
+[ 2025-11-17 05:26:59,856 ] 132 root - INFO - Data Transformation initiated.
+[ 2025-11-17 05:27:00,016 ] 137 root - INFO - Reading train and test data completed.
+[ 2025-11-17 05:27:00,019 ] 89 root - INFO - Starting feature engineering...
+[ 2025-11-17 05:27:00,074 ] 105 root - INFO - Feature engineering complete.
+[ 2025-11-17 05:27:00,074 ] 89 root - INFO - Starting feature engineering...
+[ 2025-11-17 05:27:00,127 ] 105 root - INFO - Feature engineering complete.
+[ 2025-11-17 05:27:00,140 ] 153 root - INFO - Dropped 109 columns.
+[ 2025-11-17 05:27:00,150 ] 171 root - INFO - Applying preprocessing object on training and testing dataframes.

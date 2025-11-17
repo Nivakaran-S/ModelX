@@ -14,7 +14,8 @@ from src.entity.config_entity import DataTransformationConfig
 from src.exception.exception import DementiaException
 from src.logging.logger import logging
 from src.utils.main_utils.utils import save_object, read_yaml_file
-from src.constants.training_pipeline import SCHEMA_FILE_PATH
+# Import TARGET_COLUMN from your constants file as requested
+from src.constants.training_pipeline import SCHEMA_FILE_PATH, TARGET_COLUMN  # <-- CHANGED
 
 class DataTransformation:
     def __init__(self, data_validation_artifact: DataValidationArtifact,
@@ -22,6 +23,7 @@ class DataTransformation:
         try:
             self.data_validation_artifact = data_validation_artifact
             self.data_transformation_config = data_transformation_config
+            # We still need to read the schema file for dropping object columns
             self._schema_config = read_yaml_file(SCHEMA_FILE_PATH)
         except Exception as e:
             raise DementiaException(e, sys)
@@ -59,6 +61,7 @@ class DataTransformation:
         comorbidity_cols, memory_cols, functional_cols = self._get_feature_engineering_columns()
         
         # 2. Object type columns from schema
+        # This part still needs the self._schema_config
         object_cols_to_drop = [
             list(col_dict.keys())[0] for col_dict in self._schema_config['columns']
             if list(col_dict.values())[0] == 'object'
@@ -75,6 +78,7 @@ class DataTransformation:
             comorbidity_cols + memory_cols + functional_cols + 
             object_cols_to_drop + drug_cols_to_drop + other_cols_to_drop
         ))
+        print(all_cols_to_drop)
         
         return all_cols_to_drop
 
@@ -126,8 +130,9 @@ class DataTransformation:
     def initiate_data_transformation(self) -> DataTransformationArtifact:
         try:
             logging.info("Data Transformation initiated.")
-            train_df = pd.read_csv(self.data_validation_artifact.valid_train_file_path)
-            test_df = pd.read_csv(self.data_validation_artifact.valid_test_file_path)
+            # Added low_memory=False to suppress the DtypeWarning from your log
+            train_df = pd.read_csv(self.data_validation_artifact.valid_train_file_path, low_memory=False) # <-- CHANGED
+            test_df = pd.read_csv(self.data_validation_artifact.valid_test_file_path, low_memory=False) # <-- CHANGED
 
             logging.info("Reading train and test data completed.")
 
@@ -149,7 +154,8 @@ class DataTransformation:
             # --- End Notebook Logic ---
 
             # 3. Separate Target and Features
-            target_column_name = self._schema_config['target_column']
+            # Use the imported constant instead of reading from the schema config
+            target_column_name = TARGET_COLUMN  # <-- CHANGED
             
             input_feature_train_df = train_df.drop(columns=[target_column_name], axis=1)
             target_feature_train_df = train_df[target_column_name]

@@ -1,0 +1,576 @@
+ABUSOTHR:
+  drift_status: false
+  p_value: 1.0
+AFRAID:
+  drift_status: false
+  p_value: 0.999999999997133
+AGIT:
+  drift_status: false
+  p_value: 0.9999999694455597
+AGITSEV:
+  drift_status: false
+  p_value: 0.9999936965253827
+ALCFREQ:
+  drift_status: false
+  p_value: 0.21430742724443919
+ALCOCCAS:
+  drift_status: false
+  p_value: 0.8950032916900146
+ALCOHOL:
+  drift_status: false
+  p_value: 1.0
+ANX:
+  drift_status: false
+  p_value: 0.9999999694455597
+ANXIETY:
+  drift_status: false
+  p_value: 0.8950032916900146
+ANXSEV:
+  drift_status: false
+  p_value: 0.8671263133218766
+ANYMEDS:
+  drift_status: false
+  p_value: 1.0
+APA:
+  drift_status: false
+  p_value: 0.9999998490254074
+APASEV:
+  drift_status: false
+  p_value: 0.9500606819981676
+APNEA:
+  drift_status: false
+  p_value: 0.8950032916900146
+APP:
+  drift_status: false
+  p_value: 0.9583553321818453
+APPSEV:
+  drift_status: false
+  p_value: 0.6009304156120213
+ARTHLOEX:
+  drift_status: false
+  p_value: 0.8950032916900146
+ARTHRIT:
+  drift_status: false
+  p_value: 0.8950032916900146
+ARTHSPIN:
+  drift_status: false
+  p_value: 0.8950032916900146
+ARTHTYPE:
+  drift_status: false
+  p_value: 0.8950032916900146
+ARTHUNK:
+  drift_status: false
+  p_value: 0.8950032916900146
+ARTHUPEX:
+  drift_status: false
+  p_value: 0.8201811317510845
+B12DEF:
+  drift_status: false
+  p_value: 0.9999833016146995
+BETTER:
+  drift_status: false
+  p_value: 0.999999999997133
+BILLS:
+  drift_status: false
+  p_value: 0.9826247905520089
+BIPOLAR:
+  drift_status: false
+  p_value: 0.8950032916900146
+BIRTHMO:
+  drift_status: false
+  p_value: 0.8201811317510845
+BIRTHYR:
+  drift_status: false
+  p_value: 0.5273647676451744
+BORED:
+  drift_status: false
+  p_value: 0.32043331094197647
+CBSTROKE:
+  drift_status: false
+  p_value: 1.0
+CBTIA:
+  drift_status: false
+  p_value: 1.0
+CVAFIB:
+  drift_status: false
+  p_value: 1.0
+CVANGINA:
+  drift_status: false
+  p_value: 0.8950032916900146
+CVANGIO:
+  drift_status: false
+  p_value: 0.999999999997133
+CVBYPASS:
+  drift_status: false
+  p_value: 1.0
+CVCHF:
+  drift_status: false
+  p_value: 1.0
+CVHATT:
+  drift_status: false
+  p_value: 1.0
+CVHVALVE:
+  drift_status: false
+  p_value: 0.8950032916900146
+CVOTHR:
+  drift_status: false
+  p_value: 1.0
+CVPACDEF:
+  drift_status: false
+  p_value: 0.8950032916900146
+CVPACE:
+  drift_status: false
+  p_value: 0.9778335384195732
+DECIN:
+  drift_status: false
+  p_value: 0.4409019907131052
+DECSUB:
+  drift_status: false
+  p_value: 1.0
+DEL:
+  drift_status: false
+  p_value: 0.9500606819981676
+DELSEV:
+  drift_status: false
+  p_value: 0.9999993869372467
+DEMENTED:
+  drift_status: false
+  p_value: 0.9999978907109428
+DEP2YRS:
+  drift_status: false
+  p_value: 1.0
+DEPD:
+  drift_status: false
+  p_value: 0.9999999694455597
+DEPDSEV:
+  drift_status: false
+  p_value: 0.9994109645689512
+DEPOTHR:
+  drift_status: false
+  p_value: 1.0
+DIABETES:
+  drift_status: false
+  p_value: 0.9307102102826469
+DIABTYPE:
+  drift_status: false
+  p_value: 0.999912946340254
+DISN:
+  drift_status: false
+  p_value: 0.9408441147152379
+DISNSEV:
+  drift_status: false
+  p_value: 0.5273647676451744
+DROPACT:
+  drift_status: false
+  p_value: 0.999999999997133
+DRUG27:
+  drift_status: true
+  p_value: .nan
+DRUG28:
+  drift_status: true
+  p_value: .nan
+DRUG29:
+  drift_status: true
+  p_value: .nan
+DRUG30:
+  drift_status: true
+  p_value: .nan
+DRUG31:
+  drift_status: true
+  p_value: .nan
+DRUG32:
+  drift_status: true
+  p_value: .nan
+DRUG33:
+  drift_status: true
+  p_value: .nan
+DRUG34:
+  drift_status: true
+  p_value: .nan
+DRUG35:
+  drift_status: true
+  p_value: .nan
+DRUG36:
+  drift_status: true
+  p_value: .nan
+DRUG37:
+  drift_status: true
+  p_value: .nan
+DRUG38:
+  drift_status: true
+  p_value: .nan
+DRUG39:
+  drift_status: true
+  p_value: .nan
+DRUG40:
+  drift_status: true
+  p_value: .nan
+EDUC:
+  drift_status: false
+  p_value: 0.9926187039714978
+ELAT:
+  drift_status: false
+  p_value: 0.9999999694455597
+ELATSEV:
+  drift_status: false
+  p_value: 0.8521060016180135
+EMPTY:
+  drift_status: false
+  p_value: 0.999999999997133
+ENERGY:
+  drift_status: false
+  p_value: 0.999999999997133
+EVENTS:
+  drift_status: false
+  p_value: 0.8950032916900146
+GAMES:
+  drift_status: false
+  p_value: 0.9999601233443651
+HALL:
+  drift_status: false
+  p_value: 0.9999999694455597
+HALLSEV:
+  drift_status: false
+  p_value: 0.999912946340254
+HANDED:
+  drift_status: false
+  p_value: 0.9999999999999039
+HAPPY:
+  drift_status: false
+  p_value: 0.999999999997133
+HATTMULT:
+  drift_status: false
+  p_value: 0.9077606844925846
+HATTYEAR:
+  drift_status: false
+  p_value: 0.8364379609320408
+HEARAID:
+  drift_status: false
+  p_value: 0.6385251163288245
+HEARING:
+  drift_status: false
+  p_value: 0.8364379609320408
+HEARWAID:
+  drift_status: false
+  p_value: 0.7684897058599564
+HEIGHT:
+  drift_status: true
+  p_value: .nan
+HELPLESS:
+  drift_status: false
+  p_value: 0.9999999994087381
+HISPANIC:
+  drift_status: false
+  p_value: 0.9196741276236127
+HISPOR:
+  drift_status: false
+  p_value: 0.6385251163288245
+HOPELESS:
+  drift_status: false
+  p_value: 0.999999999997133
+HYPERCHO:
+  drift_status: false
+  p_value: 0.9999999999999978
+HYPERTEN:
+  drift_status: false
+  p_value: 0.9583553321818453
+INCONTF:
+  drift_status: false
+  p_value: 1.0
+INCONTU:
+  drift_status: false
+  p_value: 0.998402842699492
+INDEPEND:
+  drift_status: false
+  p_value: 1.0
+INSOMN:
+  drift_status: false
+  p_value: 0.8950032916900146
+IRR:
+  drift_status: false
+  p_value: 0.9999999694455597
+IRRSEV:
+  drift_status: false
+  p_value: 0.9999833016146995
+MARISTAT:
+  drift_status: false
+  p_value: 0.9866435806799753
+MEALPREP:
+  drift_status: false
+  p_value: 0.9999601233443651
+MEMPROB:
+  drift_status: false
+  p_value: 0.999999999997133
+MOT:
+  drift_status: false
+  p_value: 0.8521060016180135
+MOTSEV:
+  drift_status: false
+  p_value: 0.3627806474668108
+NACCAAAS:
+  drift_status: false
+  p_value: 1.0
+NACCAANX:
+  drift_status: false
+  p_value: 0.7137035917655488
+NACCAC:
+  drift_status: false
+  p_value: 0.9999999994087381
+NACCACEI:
+  drift_status: false
+  p_value: 0.9999833016146995
+NACCADEP:
+  drift_status: false
+  p_value: 0.6573903978577842
+NACCADMD:
+  drift_status: false
+  p_value: 1.0
+NACCAGE:
+  drift_status: false
+  p_value: 0.9196741276236127
+NACCAGEB:
+  drift_status: false
+  p_value: 0.8521060016180135
+NACCAHTN:
+  drift_status: false
+  p_value: 0.999912946340254
+NACCAMD:
+  drift_status: false
+  p_value: 0.7137035917655488
+NACCANGI:
+  drift_status: false
+  p_value: 0.999999999997133
+NACCAPSY:
+  drift_status: false
+  p_value: 1.0
+NACCBETA:
+  drift_status: false
+  p_value: 0.9408441147152379
+NACCBMI:
+  drift_status: false
+  p_value: 0.6009304156120213
+NACCCCBS:
+  drift_status: false
+  p_value: 0.9999999999999978
+NACCDAD:
+  drift_status: false
+  p_value: 1.0
+NACCDBMD:
+  drift_status: false
+  p_value: 1.0
+NACCDIUR:
+  drift_status: false
+  p_value: 1.0
+NACCEMD:
+  drift_status: false
+  p_value: 0.9975346560460036
+NACCEPMD:
+  drift_status: false
+  p_value: 0.9999999999492363
+NACCFAM:
+  drift_status: false
+  p_value: 0.9926187039714978
+NACCHTNC:
+  drift_status: false
+  p_value: 1.0
+NACCLIPL:
+  drift_status: false
+  p_value: 0.9583553321818453
+NACCLIVS:
+  drift_status: false
+  p_value: 0.6009304156120213
+NACCMOM:
+  drift_status: false
+  p_value: 1.0
+NACCNIHR:
+  drift_status: false
+  p_value: 0.9963320988099498
+NACCNRYR:
+  drift_status: false
+  p_value: 1.0
+NACCNSD:
+  drift_status: false
+  p_value: 1.0
+NACCNURP:
+  drift_status: false
+  p_value: 1.0
+NACCPDMD:
+  drift_status: false
+  p_value: 1.0
+NACCREAS:
+  drift_status: false
+  p_value: 0.9996684564541397
+NACCREFR:
+  drift_status: false
+  p_value: 0.5273647676451744
+NACCSTYR:
+  drift_status: false
+  p_value: 1.0
+NACCTBI:
+  drift_status: false
+  p_value: 0.9999999999999978
+NACCTIYR:
+  drift_status: false
+  p_value: 0.9999601233443651
+NACCVASD:
+  drift_status: false
+  p_value: 1.0
+NCOTHR:
+  drift_status: false
+  p_value: 0.9778335384195732
+NCOTHRX:
+  drift_status: true
+  p_value: .nan
+NITE:
+  drift_status: false
+  p_value: 0.9999999694455597
+NITESEV:
+  drift_status: false
+  p_value: 0.7684897058599564
+NPSYDEV:
+  drift_status: false
+  p_value: 0.8950032916900146
+OCD:
+  drift_status: false
+  p_value: 0.8950032916900146
+OTHSLEEP:
+  drift_status: false
+  p_value: 0.8950032916900146
+PACKSPER:
+  drift_status: false
+  p_value: 0.9866435806799753
+PAYATTN:
+  drift_status: false
+  p_value: 0.8814428003978011
+PD:
+  drift_status: false
+  p_value: 1.0
+PDOTHR:
+  drift_status: false
+  p_value: 1.0
+PDOTHRYR:
+  drift_status: false
+  p_value: 1.0
+PDYR:
+  drift_status: false
+  p_value: 1.0
+PRIMLANG:
+  drift_status: false
+  p_value: 1.0
+PSYCDIS:
+  drift_status: false
+  p_value: 1.0
+PTSD:
+  drift_status: false
+  p_value: 0.8950032916900146
+QUITSMOK:
+  drift_status: false
+  p_value: 0.8364379609320408
+RACE:
+  drift_status: false
+  p_value: 0.9994109645689512
+RACESEC:
+  drift_status: false
+  p_value: 0.9999999999999978
+RACETER:
+  drift_status: false
+  p_value: 0.9999999999999978
+RBD:
+  drift_status: false
+  p_value: 0.8950032916900146
+REMDATES:
+  drift_status: false
+  p_value: 0.9996684564541397
+RESIDENC:
+  drift_status: false
+  p_value: 1.0
+SATIS:
+  drift_status: false
+  p_value: 0.999999999997133
+SCHIZ:
+  drift_status: false
+  p_value: 0.8950032916900146
+SEIZURES:
+  drift_status: false
+  p_value: 1.0
+SEX:
+  drift_status: false
+  p_value: 1.0
+SHOPPING:
+  drift_status: false
+  p_value: 0.9996684564541397
+SMOKYRS:
+  drift_status: false
+  p_value: 0.7684897058599564
+SPIRITS:
+  drift_status: false
+  p_value: 0.999999999997133
+STAYHOME:
+  drift_status: false
+  p_value: 0.8521060016180135
+STOVE:
+  drift_status: false
+  p_value: 0.9408441147152379
+STROKMUL:
+  drift_status: false
+  p_value: 0.8950032916900146
+TAXES:
+  drift_status: false
+  p_value: 0.9999601233443651
+TBI:
+  drift_status: false
+  p_value: 0.8950032916900146
+TBIBRIEF:
+  drift_status: false
+  p_value: 0.7861452029038115
+TBIEXTEN:
+  drift_status: false
+  p_value: 0.7861452029038115
+TBIWOLOS:
+  drift_status: false
+  p_value: 0.7861452029038115
+TBIYEAR:
+  drift_status: false
+  p_value: 0.2576479076236855
+THYROID:
+  drift_status: false
+  p_value: 0.9996684564541397
+TIAMULT:
+  drift_status: false
+  p_value: 0.6762413508834632
+TOBAC100:
+  drift_status: false
+  p_value: 0.9866435806799753
+TOBAC30:
+  drift_status: false
+  p_value: 1.0
+TRAUMBRF:
+  drift_status: false
+  p_value: 0.9778335384195732
+TRAUMCHR:
+  drift_status: false
+  p_value: 0.9778335384195732
+TRAUMEXT:
+  drift_status: false
+  p_value: 0.9778335384195732
+TRAVEL:
+  drift_status: false
+  p_value: 0.9999601233443651
+VISCORR:
+  drift_status: false
+  p_value: 0.40856275492007704
+VISION:
+  drift_status: false
+  p_value: 0.6950295191384065
+VISWCORR:
+  drift_status: false
+  p_value: 0.5273647676451744
+WEIGHT:
+  drift_status: true
+  p_value: .nan
+WONDRFUL:
+  drift_status: false
+  p_value: 0.999912946340254
+WRTHLESS:
+  drift_status: false
+  p_value: 0.999912946340254
